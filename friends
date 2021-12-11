@@ -1,0 +1,22 @@
+def Friends():
+    import array as arr
+    a = arr.array()
+    print("Choose if you'd like to see the list of names or add names")
+
+    selection = input("""
+                      A: See list of people
+                      B: Add a friend to the list
+                      Q: Back to menu
+                      Please enter your choice: """)
+
+    if selection == "A" or selection =="a":
+        for a in cars:
+            print(x)
+    elif selection == "B" or selection =="b":
+        c = input()
+        a.append(c)
+    elif selection =="Q" or selection =="q":
+        Startmenu()
+    else:
+        print("You must only select something)
+        print("Please try again")
