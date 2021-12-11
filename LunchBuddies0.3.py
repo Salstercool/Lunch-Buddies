@@ -127,8 +127,33 @@ def SidebarMenu():
     print("*")
     
 def Settings():
-    print("*")
-    print("These are settings")
+    Settingschoice = input("""What would you like to do now?
+                          Change Password [1]
+                          
+                          Go to the Location Settings [2] 
+
+                          Go to Home screen [3]
+                          
+                          Go back [b]
+                          """)
+    if Settingschoice == "1":
+        ChangePassword()
+    elif Settingschoice == "2":
+        LocationSettings()
+    elif Settingschoice == "3":
+        MainMenu()
+    elif Settingschoice == "b":
+        MainMenu()
+
+
+
+
+def ChangePassword():
+    print("Change Password")
+    input("type your new password: ")
+    input("Confirm the password: ")
+    pass
+    
     
 def LocationSettings():
     print("location settings")
